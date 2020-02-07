@@ -1,1 +1,2 @@
-# microservice-ddd-cqrs-patterns-
+# microservice-ddd-cqrs-patterns
+NetCore MicroServicio DDD CQRS

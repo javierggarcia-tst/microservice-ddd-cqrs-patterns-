@@ -1,4 +1,4 @@
-﻿using ServicioPrueba.Domain.Specification;
+﻿using ServicioPrueba.Domain.SeedWork;
 using System.Threading.Tasks;
 
 namespace ServicioPrueba.Domain.Atributo

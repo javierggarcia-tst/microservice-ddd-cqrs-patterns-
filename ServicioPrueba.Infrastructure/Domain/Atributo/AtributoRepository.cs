@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
 using ServicioPrueba.Domain.Atributo;
 using ServicioPrueba.Domain.SeedWork;
-using ServicioPrueba.Domain.Specification;
+using ServicioPrueba.Domain.SeedWork;
 using ServicioPrueba.Infrastructure.Database;
 using System;
 using System.Collections.Generic;

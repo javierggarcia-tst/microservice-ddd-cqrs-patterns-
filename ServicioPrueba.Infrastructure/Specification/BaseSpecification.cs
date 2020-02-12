@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq.Expressions;
-using ServicioPrueba.Domain.Specification;
+using ServicioPrueba.Domain.SeedWork;
 
 namespace ServicioPrueba.Infrastructure.Specification
 {

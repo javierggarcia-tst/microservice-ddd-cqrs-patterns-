@@ -5,7 +5,6 @@ using ServicioPrueba.Application.Atributos.AddAtributos;
 using ServicioPrueba.Application.Atributos.GetAtributos;
 using ServicioPrueba.Domain.Atributo;
 using ServicioPrueba.Domain.SeedWork;
-using ServicioPrueba.Domain.Specification;
 using System;
 using System.Collections.Generic;
 using System.Text;

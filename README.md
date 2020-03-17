@@ -30,6 +30,7 @@ Write Model - Domain Driven Design using:
 Commands/Queries/Domain Events handling using:
 * [MediatR](https://github.com/jbogard/MediatR) library
 * [Autofac](https://autofaccn.readthedocs.io/en/latest/integration/aspnetcore.html) library
+* [FluentValidation](https://github.com/FluentValidation/FluentValidation) library 
 
 ![projects_dependencies](Docs/domain-event-dispatcher.png)
 ![projects_dependencies](Docs/mediator-cqrs-microservice.png)

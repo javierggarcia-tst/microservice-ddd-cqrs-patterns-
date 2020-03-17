@@ -5,6 +5,7 @@ using ServicioPrueba.Application.Atributos.AddAtributos;
 using ServicioPrueba.Application.Atributos.GetAtributos;
 using ServicioPrueba.Domain.Atributo;
 using ServicioPrueba.Domain.SeedWork;
+using ServicioPrueba.Domain.Specification;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -89,6 +90,8 @@ namespace ServicioPrueba.UnitTests.Application
 
             _repo.Setup(orderRepo => orderRepo.GetElement(It.IsAny<ISpecification<AtributoEntity>>()))
                .Returns(FakeAtributo());
+            _repo.Setup(orderRepo => orderRepo.ModifyAsync(It.IsAny<AtributoEntity>()))
+              .Returns(FakeAtributo());
 
             //Act
             var handler = new AtributosModifyCommandHandler(_repo.Object, _unitofwork.Object, _specification.Object);

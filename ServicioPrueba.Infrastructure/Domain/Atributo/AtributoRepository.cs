@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
 using ServicioPrueba.Domain.Atributo;
 using ServicioPrueba.Domain.SeedWork;
-using ServicioPrueba.Domain.SeedWork;
+using ServicioPrueba.Domain.Specification;
 using ServicioPrueba.Infrastructure.Database;
+using ServicioPrueba.Infrastructure.Domain.BaseRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +12,12 @@ using System.Threading.Tasks;
 
 namespace ServicioPrueba.Infrastructure.Domain.Atributo
 {
-    class AtributoRepository : IAtributosRepository
+    class AtributoRepository : BaseRepository<AtributoEntity>, IAtributosRepository
     {
-        private readonly BDContext _context;
-
-        public AtributoRepository(BDContext context)
+       
+        public AtributoRepository(BDContext context) : base(context)
         {
-            this._context = context ?? throw new ArgumentNullException(nameof(context));
+            
         }
 
         async Task IAtributosRepository.AddAsync(AtributoEntity atributo)

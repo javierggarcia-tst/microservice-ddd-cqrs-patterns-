@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ServicioPrueba.Application.Atributos.GetAtributos
+﻿namespace ServicioPrueba.Application.Atributos.GetAtributos
 {
     public class AtributoDto
     {

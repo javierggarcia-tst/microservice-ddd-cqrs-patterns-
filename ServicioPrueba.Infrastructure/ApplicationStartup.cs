@@ -1,11 +1,7 @@
-﻿using System;
-using Autofac;
-using Autofac.Extensions.DependencyInjection;
-using Autofac.Extras.CommonServiceLocator;
-using CommonServiceLocator;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Autofac;
 using ServicioPrueba.Infrastructure.Database;
 using ServicioPrueba.Infrastructure.Processing;
+using ServicioPrueba.Infrastructure.Service;
 
 namespace ServicioPrueba.Infrastructure
 {
@@ -13,12 +9,14 @@ namespace ServicioPrueba.Infrastructure
     {
         public static void Initialize(
            ContainerBuilder container,
-            string connectionString)
+            string connectionString,
+            string connectionKrakenString)
         {
             container.RegisterModule(new DataAccessModule(connectionString));
             container.RegisterModule(new MediatorModule());
             container.RegisterModule(new ProcessingModule());
             container.RegisterModule(new SpecificationModule());
+            container.RegisterModule(new KrakenAccessModule(connectionKrakenString));
         }
     }
 }

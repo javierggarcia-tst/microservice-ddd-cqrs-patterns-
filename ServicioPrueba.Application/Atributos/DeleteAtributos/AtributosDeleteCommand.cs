@@ -1,8 +1,4 @@
 ﻿using MediatR;
-using ServicioPrueba.Application.Atributos.GetAtributos;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ServicioPrueba.Application.Atributos.AddAtributos
 {

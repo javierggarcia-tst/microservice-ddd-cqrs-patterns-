@@ -2,7 +2,6 @@
 using ServicioPrueba.Application.Atributos.GetAtributos;
 using ServicioPrueba.Domain.SeedWork;
 using ServicioPrueba.Domain.Atributo;
-using ServicioPrueba.Domain.SeedWork;
 using System.Threading;
 using System.Threading.Tasks;
 

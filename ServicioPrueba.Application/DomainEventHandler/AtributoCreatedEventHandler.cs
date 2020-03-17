@@ -2,9 +2,6 @@
 using ServicioPrueba.Domain.Atributo;
 using ServicioPrueba.Domain.Events.Atributos;
 using ServicioPrueba.Domain.SeedWork;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 

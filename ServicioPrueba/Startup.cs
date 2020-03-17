@@ -22,6 +22,7 @@ namespace ServicioPrueba
     {
         private readonly IConfiguration _configuration;
         private const string OrdersConnectionString = "OrdersConnectionString";
+        private const string ConnectionKrakenString = "ConnectionKrakenString";
 
         public Startup(IWebHostEnvironment env)
         {
@@ -78,7 +79,8 @@ namespace ServicioPrueba
             // Register your own things directly with Autofac, like:
             ApplicationStartup.Initialize(
                 builder,
-                this._configuration[OrdersConnectionString]);
+                this._configuration[OrdersConnectionString],
+                this._configuration[ConnectionKrakenString]);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using ServicioPrueba.Application.Atributos.GetAtributos;
 using ServicioPrueba.Domain.SeedWork;
 using ServicioPrueba.Domain.Atributo;
 using System.Threading;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using ServicioPrueba.Domain.Atributo;
-using ServicioPrueba.Domain.SeedWork;
+using ServicioPrueba.Domain.Specification;
 
 namespace ServicioPrueba.Infrastructure.Specification
 {

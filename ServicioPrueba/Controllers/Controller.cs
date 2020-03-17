@@ -56,7 +56,7 @@ namespace ServicioPrueba.API.Atributos
         /// <remarks>
         /// Sample request:
         ///
-        ///     PUT /atributos
+        ///     POST /atributos
         ///     {
         ///        "AtributoId": 1,
         ///        "Descripcion": "Liquidame"
@@ -65,7 +65,7 @@ namespace ServicioPrueba.API.Atributos
         /// <param name="request">AtributoRequest</param>
         /// <returns>Atributo Creado</returns>
         [Route("/atributos")]
-        [HttpPut]
+        [HttpPost]
         [ProducesResponseType(typeof(AtributoDto), (int)HttpStatusCode.Created)]
         public async Task<IActionResult> RegisterAtributo([FromBody]AtributosRequest request)
         {
@@ -89,7 +89,7 @@ namespace ServicioPrueba.API.Atributos
         /// <param name="request">AtributoRequest</param>
         /// <returns>Atributo Creado</returns>
         [Route("/atributos")]
-        [HttpPost]
+        [HttpPut]
         [ProducesResponseType(typeof(AtributoDto), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> ModificarAtributo([FromBody]AtributosRequest request)
         {

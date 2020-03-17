@@ -13,11 +13,26 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicioPrueba.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicioPrueba.Application", "ServicioPrueba.Application\ServicioPrueba.Application.csproj", "{89793251-6931-43B6-B57A-D25E7A2D8802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioPrueba.UnitTests", "ServicioPrueba.UnitTests\ServicioPrueba.UnitTests.csproj", "{AADD507B-9283-43D3-848C-3484EA67926D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicioPrueba.UnitTests", "ServicioPrueba.UnitTests\ServicioPrueba.UnitTests.csproj", "{AADD507B-9283-43D3-848C-3484EA67926D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A8257792-8D71-4E37-B031-E3262EA7D6C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiciosPrueba.FunctionalTests", "ServiciosPrueba.FunctionalTests\ServiciosPrueba.FunctionalTests.csproj", "{920D6046-03E5-4126-ACA0-E273B9D1EDE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiciosPrueba.FunctionalTests", "ServiciosPrueba.FunctionalTests\ServiciosPrueba.FunctionalTests.csproj", "{920D6046-03E5-4126-ACA0-E273B9D1EDE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{13111360-5201-40EB-9559-048314FCABFA}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{A3B5AF85-C089-4AF9-A248-56242BD7710B}"
+	ProjectSection(SolutionItems) = preProject
+		docs\domain-event-dispatcher.png = docs\domain-event-dispatcher.png
+		docs\mediator-cqrs-microservice.png = docs\mediator-cqrs-microservice.png
+		docs\repository-aggregate-database-table-relationships.png = docs\repository-aggregate-database-table-relationships.png
+		docs\simple-approach-cqrs-queries.png = docs\simple-approach-cqrs-queries.png
+		docs\simplified-cqrs-ddd-microservice.png = docs\simplified-cqrs-ddd-microservice.png
+		docs\swagger-ui.png = docs\swagger-ui.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +76,7 @@ Global
 		{AADD507B-9283-43D3-848C-3484EA67926D} = {A8257792-8D71-4E37-B031-E3262EA7D6C9}
 		{A8257792-8D71-4E37-B031-E3262EA7D6C9} = {69E78E82-248B-4913-A152-50D7A12360A4}
 		{920D6046-03E5-4126-ACA0-E273B9D1EDE7} = {A8257792-8D71-4E37-B031-E3262EA7D6C9}
+		{A3B5AF85-C089-4AF9-A248-56242BD7710B} = {13111360-5201-40EB-9559-048314FCABFA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E78C4A5-FCC5-4E5F-93A0-27DDCB7AD79F}
